@@ -109,13 +109,14 @@ export default async function Header() {
     <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <Image
+          {/* <Image
             src={"/logo.png"}
             alt="Sensai Logo"
             width={200}
             height={60}
             className="h-12 py-1 w-auto object-contain"
-          />
+          /> */}
+          <h1 className="text-blue-500 dark:text-blue-500 font-bold text-3xl  m-5">INTERAI</h1>
         </Link>
 
         {/* Action Buttons */}

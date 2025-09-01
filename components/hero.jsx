@@ -8,23 +8,23 @@ import Link from "next/link";
 const HeroSection = () => {
   const imageRef = useRef(null);
 
-  useEffect(() => {
-    const imageElement = imageRef.current;
+  // useEffect(() => {
+  //   const imageElement = imageRef.current;
 
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const scrollThreshold = 100;
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY;
+  //     const scrollThreshold = 100;
 
-      if (scrollPosition > scrollThreshold) {
-        imageElement.classList.add("scrolled");
-      } else {
-        imageElement.classList.remove("scrolled");
-      }
-    };
+  //     if (scrollPosition > scrollThreshold) {
+  //       imageElement.classList.add("scrolled");
+  //     } else {
+  //       imageElement.classList.remove("scrolled");
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <section className="w-full pt-36 md:pt-48 pb-10">
@@ -47,7 +47,7 @@ const HeroSection = () => {
             </Button>
           </Link>
         </div>
-        <div className="hero-image-wrapper mt-5 md:mt-0 px-4 md:px-6 lg:px-8">
+        {/* <div className="hero-image-wrapper mt-5 md:mt-0 px-4 md:px-6 lg:px-8">
           <div ref={imageRef} className="hero-image">
             <Image
               src="/Banner.png"
@@ -58,7 +58,7 @@ const HeroSection = () => {
               priority
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
