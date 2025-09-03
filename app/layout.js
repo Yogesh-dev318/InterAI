@@ -10,7 +10,7 @@ import { dark } from "@clerk/themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sensai | Unlock Your Potential",
+  title: "InterAI",
   description: "",
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     >
       <html lang="en" suppressHydrationWarning>
         <head>
-          <link rel="icon" href="/logo.png" sizes="any" />
+          {/* <link rel="icon" href="/logo.png" sizes="any" /> */}
         </head>
         <body className={`${inter.className}`}>
           <ThemeProvider
